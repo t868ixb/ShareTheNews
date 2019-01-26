@@ -1,26 +1,21 @@
 {
-  "name": "sharethenews",
+  "name": "Share the News",
   "version": "1.0.0",
-  "description": "a web app that lets users view and leave comments on the latest news",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/t868ixb/ShareTheNews.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "author": "Isaac Bayon",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/t868ixb/ShareTheNews/issues"
-  },
-  "homepage": "https://github.com/t868ixb/ShareTheNews#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.4",
+    "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^5.4.4"
+    "mongoose": "^5.3.16",
+    "morgan": "^1.9.1"
   }
 }
