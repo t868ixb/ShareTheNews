@@ -1,6 +1,6 @@
 # ShareTheNews
 
-Share The News is a news scaper web app that scrapes news from the NPR news site.
+Share The News is a news scraper web app that scrapes news from the NPR news site, allows a user to save a favorite article, as well as add notes about the article.  
 
 You can run the app on local host or on the heroku hosting platform.  
 
