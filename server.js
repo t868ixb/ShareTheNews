@@ -30,7 +30,7 @@ app.use(express.static("public"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://sharethenews:sharethenews18!@ds211083.mlab.com:11083/heroku_4gqdmlsr"
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://sharethenews:sharethenews18!@ds211083.mlab.com:11083/heroku_4gqdmlsr";
 
 mongoose.connect(MONGODB_URI,{ useNewUrlParser: true });
 
@@ -262,11 +262,7 @@ app.delete("/notes/delete/:note_id/:article_id", function (req, res) {
   });
 });
 
-
-
-
-
 // Start the server
-// app.listen(PORT, function () {
-//   console.log("App running on port " + PORT + "!");
-// });
+app.listen(PORT, function () {
+  console.log("App running on port " + PORT + "!");
+});
