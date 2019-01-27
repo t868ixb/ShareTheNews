@@ -31,9 +31,13 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Connect to the Mongo DB locally or when hosted on heroku
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1/shareTheNews";
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1/shareTheNews";
+// mongoose.connect(MONGODB_URI,{ useNewUrlParser: true });
+
+ONGODB_URI = process.env.MONGODB_URI || "mongodb://sharethenews:sharethenews18!@ds211083.mlab.com:11083/heroku_4gqdmlsr";
 mongoose.connect(MONGODB_URI,{ useNewUrlParser: true });
 
+mongodb://<dbuser>:<dbpassword>@ds211083.mlab.com:11083/heroku_4gqdmlsr
 
 // Routes
 //route to load the index page
