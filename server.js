@@ -37,7 +37,7 @@ app.set("view engine", "handlebars");
 MONGODB_URI = process.env.MONGODB_URI || "mongodb://sharethenews:sharethenews18!@ds211083.mlab.com:11083/heroku_4gqdmlsr";
 mongoose.connect(MONGODB_URI,{ useNewUrlParser: true });
 
-mongodb://<dbuser>:<dbpassword>@ds211083.mlab.com:11083/heroku_4gqdmlsr
+//mongodb://<dbuser>:<dbpassword>@ds211083.mlab.com:11083/heroku_4gqdmlsr
 
 // Routes
 //route to load the index page
